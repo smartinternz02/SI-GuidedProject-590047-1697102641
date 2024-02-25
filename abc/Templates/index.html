@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sleep Disorder</title>
+    
+</head>
+<body>
+    <h2>Sleep Disorder</h2>
+    <form action="/predict" method="post">
+        <label for="Gender">Gender :</label>
+            <select name="Gender" id="Gender">
+            <option value=1>Male</option>
+            <option value=0>Female</option>
+            </select><br><br>
+        
+            <label for="Age">Age:</label>
+             <input type="number" id="Age" name="Age">
+            <br><br>
+
+            <label for="Occupation">Occupation :</label>
+            <select name="Occupation" id="Occupation">
+            <option value=0>Software Engineer</option>
+            <option value=1>Doctor</option>
+            <option value=2>Nurse</option>
+            <option value=3>Engineer</option>
+            <option value=4>Accountant</option>
+            <option value=5>Scientist</option>
+            <option value=6>Teacher</option>
+            <option value=7>Lawyer</option>
+            <option value=8>Salesperson</option>
+            <option value=9>Manager</option>
+            </select><br><br>
+
+            <label for="Sleep Duration">Sleep Duration :</label>
+  <input type="number" id="Sleep Duration" name="Sleep Duration" min="1" max="9">
+  <br><br>
+
+  <label for="Quality of Sleep">Quality of Sleep :</label>
+  <input type="number" id="Quality of Sleep" name="Quality of Sleep" min="1" max="9">
+  <br><br>
+
+
+  <label for="Physical Activity Level">Physical Activity Level(between 1-100) :</label>
+  <input type="number" id="Physical Activity Level" name="Physical Activity Level">
+  <br><br>
+
+  <label for="Stress Level">Stress Level :</label>
+  <input type="number" id="Stress Level" name="Stress Level" min="1" max="9">
+  <br><br>
+
+  <label for="BMI Category">BMI Category :</label>
+  <select name="BMI Category" id="BMI Category">
+  <option value=0>Normal</option>
+  <option value=1>Overweight</option>
+  <option value=2>Normal Weight</option>
+  <option value=3>Obese</option>
+  </select><br><br>
+
+  <label for="Heart Rate">Heart Rate(between 1-100) :</label>
+  <input type="number" id="Heart Rate" name="Heart Rate">
+  <br><br>
+
+  <label for="Daily Steps">Daily Steps :</label>
+  <input type="number" id="Daily Steps" name="Daily Steps">
+  <br><br>
+
+  <label for="Systolic">Systolic(between 100-150) :</label>
+  <input type="number" id="Systolic" name="Systolic">
+  <br><br>
+
+  <label for="Diastolic">Diastolic(between 50-100) :</label>
+  <input type="number" id="Diastolic" name="Diastolic">
+  <br><br>
+        <input type="submit" value="Predict">
+    </form>
+</body>
+</html>
